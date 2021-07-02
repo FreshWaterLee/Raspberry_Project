@@ -19,6 +19,6 @@ try:
         time.sleep(1)
 except KeyboardInterrupt:
     pass
-    print("Exit with ^C. GoodBye')
+    print("Exit with ^C. GoodBye")
     GPIO.cleanup()
     exit()
