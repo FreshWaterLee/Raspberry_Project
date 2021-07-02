@@ -59,10 +59,11 @@ def Led_Jud(): ## 이동 가능 여부 확인용
         Led_off() ## 직진이 불가하다면 후진을 해야하기 때문에 LED_Off대신 후진 함수 
 try:
     while True:
+        '''
+        ## 하나의 센서의 데이터를 불러올때 사용 (센서 작동 유무 확인을 위해)
         print("잠시만 기다려주세용!!")
         sleep(3)
         Led_off()
-        ## 하나의 센서의 데이터를 불러올때 사용 (센서 작동 유무 확인을 위해)
         i=2
         print("Detect  ",GPIO_Di[i])
         GPIO.output(GPIO_TRI,True)
@@ -80,7 +81,13 @@ try:
         print(Dir[i],"distance: ",distance)
         Led_Jud()
         '''
-        '''
+        print('잠시만 기다려주십시오')
+        sleep(2)
+        Led_off()
+        for i in range(0,3):
+            Detect_dir(i)
+            sleep(0.3)
+        Led_Jud()
 except KeyboardInterrupt:
     print("LED_OFF")
     Led_off()
