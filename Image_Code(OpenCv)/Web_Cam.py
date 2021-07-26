@@ -3,7 +3,8 @@ import numpy as np
 import sys
 #import time
 
-cap = cv2.VideoCapture('../../001.avi')
+#cap = cv2.VideoCapture('../../001.avi')
+cap = cv2.VideoCapture(0)
 cap.set(cv2.CAP_PROP_FRAME_WIDTH,640)
 cap.set(cv2.CAP_PROP_FRAME_HEIGHT,480)
 fps = cap.get(cv2.CAP_PROP_FPS)
