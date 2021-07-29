@@ -1,0 +1,26 @@
+<annotation>
+	<folder>test</folder>
+	<filename>21.jpg</filename>
+	<path>/home/pi/Desktop/Study/Custom_TensorFlow/images/test/21.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>512</width>
+		<height>512</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Tumbler</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>175</xmin>
+			<ymin>64</ymin>
+			<xmax>339</xmax>
+			<ymax>459</ymax>
+		</bndbox>
+	</object>
+</annotation>

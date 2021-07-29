@@ -1,0 +1,1 @@
+wget https://github.com/thelontra/tensorflow-on-arm/releases/download/v2.0.0/tensorflow-2.0.0-cp37-none-linux_armv7l.whl
