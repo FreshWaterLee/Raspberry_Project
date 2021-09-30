@@ -1,11 +1,3 @@
-import time
-from AngleMeterAlpha import AngleMeterAlpha
-
-angleMeter = AngleMeterAlpha()
-angleMeter.measure()
-
-while True:
-    print(angleMeter.get_kalman_roll(),",", angleMeter.get_complementary_roll(), ",",angleMeter.get_kalman_pitch(),",", angleMeter.get_complementary_pitch(),".")
-    #print(angleMeter.get_int_roll(), angleMeter.get_int_pitch())
-    time.sleep(0.3)
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:c6b5cca88c946f47cc0b8bbe0a0b69f9e3b42addd1ecb49c5f9426202486138f
+size 371

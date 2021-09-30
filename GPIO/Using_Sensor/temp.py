@@ -1,18 +1,3 @@
-from Adafruit_Python_DHT import Adafruit_DHT
-import time
-
-sensor = Adafruit_DHT.DHT11
-pin = 4
-
-try:
-    while True:
-        h,t = Adafruit_DHT.read_retry(sensor,pin)
-        if h is not None and t is not None:
-            print("Temperature = {0:0.1f}*C Humidity = {1:0.1f}%".format(t,h))
-        else:
-            print('Read Error')
-        time.sleep(1)
-except KeyboardInterrupt:
-    print("Terminated by Keyboard")
-finally:
-    print("End of Program")
+version https://git-lfs.github.com/spec/v1
+oid sha256:6ce26b47d17bba115622221b7bf75f55de90764780bfd77ad9aa8d533d9e4d30
+size 455

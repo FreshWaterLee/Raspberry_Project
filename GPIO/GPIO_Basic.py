@@ -1,20 +1,3 @@
-import RPi.GPIO as GPIO
-import time
-
-GPIO.setmode(GPIO.BCM)
-GPIO.setup(18,GPIO.OUT)
-##핀맵의 번호가 아닌 GPIO 핀넘버
-
-while True:
-    try:
-        GPIO.output(18,False)
-        print('OFF')
-        time.sleep(2)
-        GPIO.output(18,True)
-        print('On')
-        time.sleep(2)
-    except KeyboardInterrupt:
-        pass
-        print('Exit with ^C. GoodBye!')
-        GPIO.cleanup()
-        exit()
+version https://git-lfs.github.com/spec/v1
+oid sha256:c45cc627855a2936d647b1a3a37f82a22b140943e4f13ad7154778e917709307
+size 415

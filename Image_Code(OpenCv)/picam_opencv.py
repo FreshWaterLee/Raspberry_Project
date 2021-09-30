@@ -1,20 +1,3 @@
-from picamera.array import PiRGBArray
-from picamera import PiCamera
-import time
-import cv2
-
-camera = PiCamera()
-camera.resolution = (640, 480)
-camera.framerate = 32
-rawCapture = PiRGBArray(camera, size=(640, 480))
-time.sleep(0.1)
-for frame in camera.capture_continuous(rawCapture, format="bgr", use_video_port=True):
-    img = frame.array   
-    gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-    gray = cv2.equalizeHist(gray)
-    vis = img.copy()
-    cv2.imshow("Frame", vis)
-    key = cv2.waitKey(1) & 0xFF
-    rawCapture.truncate(0)
-    if key == ord("q"):
-        break
+version https://git-lfs.github.com/spec/v1
+oid sha256:b4cb4355eeb7109b6b6590bf1a74f5ae8daf6d7916bcdc3f6575b0a350a131f6
+size 571

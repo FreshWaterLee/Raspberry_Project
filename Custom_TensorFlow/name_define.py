@@ -1,17 +1,3 @@
-import os
-
-
-## 
-def main():
-    i =1
-    dirn = 'Tumbler'
-    for filename in os.listdir(dirn):
-        dst = str(i)+".jpg"
-        src = dirn+"/"+filename
-        dst = dirn+"/"+dst
-        os.rename(src,dst)
-        
-        i+=1
-
-if __name__ == '__main__':
-    main()
+version https://git-lfs.github.com/spec/v1
+oid sha256:f04fa600189e3d7b9345560a443f80183736fc20811430bf2c6c1e5dc76310b5
+size 270
